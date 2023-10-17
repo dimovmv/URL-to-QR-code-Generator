@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Lato, sans-serif;
+
+  height: 100vh;
+  background-color: beige;
+}
+h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 4.2rem;
+  margin-top: 3rem;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 400;
+  word-spacing: 1rem;
+  letter-spacing: -2px;
+  padding: 2.4rem 0;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  /* margin-top: 2rem; */
+  height: 2.4rem;
+  width: 20rem;
+  background-color: #faebd7;
+  font-size: 1.6rem;
+  color: #000;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid #7d766c;
+  cursor: pointer;
+  box-shadow: inset 0 0 0.5em #7d766c;
+  outline-color: #e1d4c2;
+  outline-offset: 0.2rem;
+}
+
+select {
+  margin-top: 2rem;
+  background-color: #e1d4c2;
+  color: #000;
+  text-align: center;
+  font-family: inherit;
+  border: 1px solid #7d766c;
+  border-radius: 10rem;
+  padding: 0.2rem 1rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  cursor: pointer;
+  box-shadow: inset 0 0 0.5em #7d766c;
+  outline-color: #faebd7;
+  outline-offset: 0.2rem;
+}
+
+button {
+  margin-top: 2rem;
+  height: 3.2rem;
+  width: 20rem;
+  background-image: linear-gradient(to right, #fef9f3, #afa597);
+  font-size: 1.6rem;
+  color: #000;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#qrcode {
+  margin: 2rem auto 0 auto;
+}
+
+.gen_qr:hover {
+  background-image: linear-gradient(to right, #afa597, #fef9f3);
+  transform: scale(1.1);
+}
+
+.dl_png {
+  background-image: linear-gradient(to right, #fef9f3, #afa597);
+}
+
+.dl_png:hover {
+  background-image: linear-gradient(to right, #afa597, #fef9f3);
+  transform: scale(1.1);
+}
+
+.dl_pdf {
+  background-image: linear-gradient(to right, #afa597, #fef9f3);
+  margin-bottom: 4.2rem;
+}
+
+.dl_pdf:hover {
+  background-image: linear-gradient(to right, #fef9f3, #afa597);
+  transform: scale(1.1);
+}

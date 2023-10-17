@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>QR Code Generator</h1>
+    <main>
+      <input id="url" type="text" placeholder="Enter URL here" />
+      <select id="size">
+        <option value="128">Small</option>
+        <option value="256">Medium</option>
+        <option value="512">Large</option>
+      </select>
+      <button onclick="generateQR()" class="gen_qr">Generate QR Code</button>
+      <div id="qrcode"></div>
+      <button id="download" style="display: none" class="dl_png">
+        Download as PNG
+      </button>
+      <button id="downloadPDF" style="display: none" class="dl_pdf">
+        Download as PDF
+      </button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
